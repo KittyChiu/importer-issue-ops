@@ -176,8 +176,8 @@ jobs:
               }
 
               if (currentLength > MAX_LENGTH){
-                workflows.push(`... Too large post in issue comment.`)
-                workflows.push(`Download the full dry-run output [here](${{ needs.execute-actions-importer.outputs.output-url }})`)
+                workflows.push(`... Dry-run outputs are too large to display in issue comment.`)
+                workflows.push(`Download the full output [here](${{ needs.execute-actions-importer.outputs.output-url }})`)
                 break
               }
 
